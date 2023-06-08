@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
@@ -10,7 +11,7 @@ import Hello from "./components/hello";
 
 function App() {
   return (
-    <Container style={{ width: "400px" }}>
+    <Container style={{ width: "400px" }} className="log-sign-form">
       <Row>
         <Col>
           <UserAuthContextProvider>

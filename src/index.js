@@ -2,21 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import App from "./App";
-import Hello from "./components/hello";
-import Cards from "./Department/Cards";
-import Navbar from "./Navbar/nav";
-import Appoint from "./LoginForm/Appoint/form";
+import Departments from "./Department/depart";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      {/* <App /> */}
-      {/* <Hello /> */}
-      {/* <Cards /> */}
-      <Appoint />
-      {/* <Navbar /> */}
-    </Router>
+  
+    <Departments />
+    
   </React.StrictMode>,
   document.getElementById("root")
 );

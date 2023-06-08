@@ -1,11 +1,13 @@
 .img-pad{
-    padding-top: 450px;
+    /* padding-top: 450px; */
     margin-left: 70px;
     margin-right: 70px;
+    /* background-color: rgb(227, 227, 227); */
+    /* margin-top: 450px; */
 }
 
 
-button{
+.card-body .button{
     border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
@@ -16,11 +18,11 @@ button{
 
 .card-body img{
     /* padding: 30px; */
-    width: 300px;
-    color: #fff;
+    width: 350px;
+    color: #000000;
     font-size: 36px;
     line-height: 100px;
-    margin: 10px;
+    margin-left: 25px;
     /* padding: 2%; */
     text-align: center;
     height: 200px;
@@ -29,9 +31,9 @@ button{
 }
 
 .card-body span{
-    margin-left: 105px;
+    margin-left: 145px;
     position: absolute;
-    top: 194px;
+    top: 189px;
     padding: 5px;
 }
 

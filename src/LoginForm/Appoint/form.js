@@ -1,6 +1,7 @@
 import Footer from "../../Footer/footer";
 import "./form.css";
 import { useState } from "react";
+import React from "react";
 
 export default function Appoint() {
   const [user, setUser] = useState({

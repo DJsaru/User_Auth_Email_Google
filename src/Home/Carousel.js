@@ -32,7 +32,7 @@ export default class MultipleItems extends Component {
       dots: true,
       infinite: false,
       speed: 400,
-      slidesToShow: 4,
+      slidesToShow: 3,
       slidesToScroll: 2,
       initialSlide: 0,
       appendDots: (slick) => (
@@ -71,37 +71,37 @@ export default class MultipleItems extends Component {
       <div className="img-pad">
         <Slider {...settings}>
           <div className="card-body">
-            <img src={require("./heart.png")} />
+            <img src={require("./heart.png")} alt="this is an image "/>
             <span className="btn-img">
               <button className="btn-img"> Heart</button>
             </span>
           </div>
           <div className="card-body">
-            <img src={require("./dental.png")} />
+            <img src={require("./dental.png")}  alt="this is an image "/>
             <span className="btn-img">
               <button className="btn-img"> Dental</button>
             </span>
           </div>
           <div className="card-body">
-            <img src={require("./heart.png")} />
+            <img src={require("./heart.png")}  alt="this is an image "/>
             <span className="btn-img">
               <button className="btn-img"> Heart</button>
             </span>
           </div>
           <div className="card-body">
-            <img src={require("./dental.png")} />
+            <img src={require("./dental.png")}  alt="this is an image "/>
             <span className="btn-img">
               <button className="btn-img"> Dental</button>
             </span>
           </div>
           <div className="card-body">
-            <img src={require("./heart.png")} />
+            <img src={require("./heart.png")}  alt="this is an image "/>
             <span className="btn-img">
               <button className="btn-img"> Heart</button>
             </span>
           </div>
           <div className="card-body">
-            <img src={require("./dental.png")} />
+            <img src={require("./dental.png")}  alt="this is an image "/>
             <span className="btn-tag">
               <button className="btn-img"> Dental</button>
             </span>

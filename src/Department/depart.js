@@ -1,12 +1,13 @@
 import Cards from "./Cards";
 import "./depart.css";
 import Footer from "../Footer/footer";
+import React from "react";
 
 export default function Departments() {
   return (
-    <div>
-      <div className="head">
-        <h1 className="font"> DOCTOR DETAILS </h1>
+    <div className="background-image">
+      <div class="background-content">
+        <h1 className="font"> DEPARTMENTS </h1>
       </div>
 
       <div className="doc-one">
