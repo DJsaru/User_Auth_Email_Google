@@ -1,9 +1,16 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./landpage.css";
 var ReactDOM = require('react-dom');
 var Carousel = require('react-responsive-carousel').Carousel;
 
 export default function LandPage(){
+
+    const Nav = useNavigate();
+  const appo = () => {
+    Nav("/visitADoc");
+  };
+
     return(
         <div>
             <div class="background-image">
@@ -87,6 +94,14 @@ export default function LandPage(){
                         </div>
                     </div>
                     <br/>
+                     <nav>
+            <Link to="/visitADoc/appoint">
+              <div onClick={appo}>
+                Book an Appointment
+              </div>
+            </Link>
+          </nav>
+
                     <a href="#">Book an Appointment</a>
                 </div>
             </div>

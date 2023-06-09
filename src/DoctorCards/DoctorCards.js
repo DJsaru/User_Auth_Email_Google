@@ -1,65 +1,52 @@
 import React from 'react';
-import "./doctorcard.css"
+import './doctorcard.css'; // Import the CSS file for styling
 
-const DoctorCard = ({ clinicName, specialization, contactDetails, image }) => {
+const doctorsData = [
+  {
+    id: 1,
+    name: 'Dr. Jaybhaye',
+    specialization: 'Cardiology',
+    experience: '10 years',
+    description: 'Dr. John Doe is a highly skilled cardiologist with expertise in heart diseases and cardiac interventions.',
+    image: "https://img.freepik.com/free-photo/smiling-young-female-doctor-wearing-medical-robe-looking-putting-hand-arm-keeping-another-one-air_141793-58150.jpg?w=1800&t=st=1686339309~exp=1686339909~hmac=7255dca542e35ea0077db46b2cb6f8a0f8af3701de42ab8ff7e76bea77432e67",
+  },
+  {
+    id: 2,
+    name: 'Dr. DJSARU',
+    specialization: 'Dermatology',
+    experience: '8 years',
+    description: 'Dr. Jane Smith is a renowned dermatologist specializing in skin conditions and cosmetic treatments.',
+    image: "https://img.freepik.com/free-photo/female-doctor-hospital-with-stethoscope_23-2148827774.jpg?w=1380&t=st=1686339781~exp=1686340381~hmac=7baf0d82c133808c8e1c8871fae19fbfa78414bfb39d0090a918aaccb8fb4c3e",
+  },
+  {
+    id: 3,
+    name: 'Dr. James',
+    specialization: 'Dermatology',
+    experience: '8 years',
+    description: 'Dr. Jane Smith is a renowned dermatologist specializing in skin conditions and cosmetic treatments.',
+    image: "https://img.freepik.com/free-photo/smiling-young-female-doctor-wearing-medical-robe-looking-putting-hand-arm-keeping-another-one-air_141793-58150.jpg?w=1800&t=st=1686339309~exp=1686339909~hmac=7255dca542e35ea0077db46b2cb6f8a0f8af3701de42ab8ff7e76bea77432e67",
+  }
+  // Add more doctors as needed
+];
+
+const DoctorCard = () => {
   return (
-    <div className="doctor-card">
-      <h2 className="clinic-name">{clinicName}</h2>
-      <div className="content">
-        <div className="left-side">
-          <img src={image} alt="img" className="doctor-image" />
-        </div>
-        <div className="right-side">
-          <h4 className="specialization">Specialization: {specialization}</h4>
-          <div className="contact-details">
-            <h4>Contact Details:</h4>
-            <p>Phone: {contactDetails.phone}</p>
-            <p>Email: {contactDetails.email}</p>
-            <p>Address: {contactDetails.address}</p>
+    <div className="card-container">
+      {doctorsData.map((doctor) => (
+        <div className="card" key={doctor.id}>
+          <div className="card-header">
+            <img src={doctor.image} alt={doctor.name} />
+            <h1>{doctor.name}</h1>
+          </div>
+          <div className="card-body">
+            <p>Specialization: {doctor.specialization}</p>
+            <p>Experience: {doctor.experience}</p>
+            <p>{doctor.description}</p>
           </div>
         </div>
-      </div>
-    </div>
-  );
-};
-
-const DoctorCards = () => {
-  const doctors = [
-    {
-        clinicName: "ABC Medical Center",
-        specialization: "Cardiology",
-        contactDetails: {
-          phone: "123-456-7890",
-          email: "doctor1@example.com",
-          address: "123 Main Street, City, Country"
-        },
-        image:"../Department/heart_icon.png" 
-      },
-    {
-      clinicName: "XYZ Clinic",
-      specialization: "Dermatology",
-      contactDetails: {
-        phone: "987-654-3210",
-        email: "doctor2@example.com",
-        address: "456 Park Avenue, City, Country"
-      },
-      image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fnature%2F&psig=AOvVaw0x6hyJVyXtoUxPsdaUPYst&ust=1686167252030000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKiBkdK0r_8CFQAAAAAdAAAAABAE"
-    }
-  ];
-
-  return (
-    <div>
-      {doctors.map((doctors, i) => (
-        <DoctorCard
-          key={i}
-          clinicName={doctors.clinicName}
-          specialization={doctors.specialization}
-          contactDetails={doctors.contactDetails}
-          image src={doctors.image}
-        />
       ))}
     </div>
   );
 };
 
-export default DoctorCards;
+export default DoctorCard;

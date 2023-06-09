@@ -1,51 +1,40 @@
-.doctor-card {
-    display: flex;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f7f7f7;
-    margin-bottom: 20px;
-    width: 580px;
-    height: 250px;
-    margin: 45px;
-    margin-right: 45px;
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-  }
-  
-  .doctor-card .clinic-name {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .doctor-card .content {
-    display: flex;
-  }
-  
-  .doctor-card .left-side {
-    flex: 0 0 150px;
-  }
-  
-  .doctor-card .doctor-image {
+}
+
+.card {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  /* border-radius: 5px; */
+  text-align: center;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.card-infor{
+  text-align: center;
+  color: rgb(244, 3, 3);
+  margin-top: 0px;
+}
+
+.card img {
+  width: 500px;
+  height: 750px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  /* margin-left: 20px; */
+  height: auto;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+@media (max-width: 768px) {
+  .card {
     width: 100%;
-    height: auto;
-    border-radius: 5px 0 0 5px;
+    max-width: 100%;
   }
-  
-  .doctor-card .right-side {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .doctor-card .specialization {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .doctor-card .contact-details h4 {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  
-  .doctor-card .contact-details p {
-    margin: 0;
-  }
-  
+}
