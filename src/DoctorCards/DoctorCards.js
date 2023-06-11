@@ -38,7 +38,7 @@ const DoctorCard = () => {
             <img src={doctor.image} alt={doctor.name} />
             <h1>{doctor.name}</h1>
           </div>
-          <div className="card-body">
+          <div className="card-body" style={{fontSize:"14px"}}>
             <p>Specialization: {doctor.specialization}</p>
             <p>Experience: {doctor.experience}</p>
             <p>{doctor.description}</p>

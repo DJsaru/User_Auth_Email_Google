@@ -68,7 +68,7 @@ export default function Appoint() {
     }
 
     const res = await fetch(
-      "https://medicare-7138b-default-rtdb.firebaseio.com/for.json",
+      "https://finaleproject-be50b-default-rtdb.firebaseio.com/for.json",
       {
         method: "POST",
         headers: {
@@ -87,7 +87,7 @@ export default function Appoint() {
           Date,
         }),
       }
-    ).then((response) => window.location.reload());
+    ).then((res) => window.location.reload());
   };
 
   return (
@@ -120,7 +120,7 @@ export default function Appoint() {
                   />
                 </div>
                 <div className="last">
-                  <label htmlFor="lasttName">Last Name</label> <br />
+                  <label htmlFor="lastName">Last Name</label> <br />
                   <input
                     type="text"
                     autoComplete="off"

@@ -12,15 +12,15 @@ export default function LandPage(){
   };
 
     return(
-        <div>
+        <div >
             <div class="background-image">
-        <div class="background-content">
+        <div class="background-content" data-aos="fade-up">
             <h1>Welcome to MediCare </h1>
             <p>- Your Online Medical Appointment Platform<br /></p>
             
         </div>
     </div>
-    <div class="about">
+    <div class="about" data-aos="fade-up">
         <div class="main-about">
             <div class="inner-about">
                 <div class="about-content">

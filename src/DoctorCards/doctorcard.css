@@ -15,10 +15,15 @@
   padding-top: 30px;
 }
 
-.card-infor{
+.card{
   text-align: center;
-  color: rgb(244, 3, 3);
+  color: rgb(0, 0, 0);
   margin-top: 0px;
+  background-color: #716f6f20;
+}
+
+.card-header{
+  background-color: #239f8439;
 }
 
 .card img {
