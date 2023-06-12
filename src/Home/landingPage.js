@@ -1,18 +1,26 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+// import { Link, useNavigate } from "react-router-dom";
 import "./landpage.css";
-var ReactDOM = require('react-dom');
-var Carousel = require('react-responsive-carousel').Carousel;
+import { Button } from "react-bootstrap";
+import { useNavigate } from "react-router";
+import { useUserAuth } from "../context/UserAuthContext";
+
 
 export default function LandPage(){
 
-    const Nav = useNavigate();
-  const appo = () => {
-    Nav("/visitADoc");
+    const { logOut, user } = useUserAuth();
+  const navigate = useNavigate();
+  const handleLogout = async () => {
+    try {
+      await logOut();
+      navigate("/");
+    } catch (error) {
+      console.log(error.message);
+    }
   };
 
     return(
-        <div >
+        <div>
             <div class="background-image">
         <div class="background-content" data-aos="fade-up">
             <h1>Welcome to MediCare </h1>
@@ -20,6 +28,13 @@ export default function LandPage(){
             
         </div>
     </div>
+    <diV>
+    <div>
+        <Button variant="primary" onClick={handleLogout}>
+          Log out
+        </Button>
+      </div>
+    </diV>
     <div class="about" data-aos="fade-up">
         <div class="main-about">
             <div class="inner-about">
@@ -94,13 +109,13 @@ export default function LandPage(){
                         </div>
                     </div>
                     <br/>
-                     <nav>
+                     {/* <nav>
             <Link to="/visitADoc/appoint">
               <div onClick={appo}>
                 Book an Appointment
               </div>
             </Link>
-          </nav>
+          </nav> */}
 
                     <a href="#">Book an Appointment</a>
                 </div>

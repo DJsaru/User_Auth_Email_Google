@@ -1,4 +1,4 @@
-.grid-container {
+/* .grid-container {
   margin-left: 10px; 
  margin-top: 20px; 
   padding-top: 35px;
@@ -248,4 +248,85 @@ button[type="submit"] {
 
 .form-foot {
   margin-top: 500px;
-} 
+}  */
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.containers {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.containers h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.containers .cont-det {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.containers .cont-det > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.containers label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.containers input[type="text"],
+.containers input[type="number"],
+.containers input[type="time"],
+.containers input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.containers .submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 30px;
+  text-align: center;
+  padding: auto;
+  box-sizing: border-box;
+}
+
+.containers .submit button {
+  margin-left: 50%;
+  padding: 10px 30px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  /* margin: 0 auto;  */
+}
+
+/* .form-foot {
+  margin-top: 20px;
+  text-align: center;
+} */
+

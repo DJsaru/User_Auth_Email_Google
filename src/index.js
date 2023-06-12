@@ -7,7 +7,11 @@ import LandPage from "./Home/landingPage";
 import DoctorCards from "./DoctorCards/DoctorCards";
 import Practise from "./DoctorCards/Practise";
 import Appoint from "./LoginForm/Appoint/form";
-import Demo1 from "./LoginForm/Appoint/demo1";
+import Login from "./components/Login";
+import Home from "./components/Home";
+import Signup from "./components/Signup";
+import App from "./App";
+
 
 
 
@@ -15,15 +19,15 @@ ReactDOM.render(
   <React.StrictMode>
   
     {/* <Departments /> */}
-    {/* <Router> */}
+    <Router>
     {/* <LandPage /> */}
     {/* <Practise /> */}
     {/* <DoctorCards /> */}
-
-    {/* </Router> */}
+    <App />
+    </Router>
   {/* <Appoint /> */}
   {/* <Demo1 /> */}
-  <Appoint />
+  {/* <Appoint /> */}
 
   </React.StrictMode>,
   document.getElementById("root")

@@ -7,11 +7,12 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
-import Hello from "./components/hello";
+// import Hello from "./components/hello";
+import LandPage from "./Home/landingPage";
 
 function App() {
   return (
-    <Container style={{ width: "400px" }} className="log-sign-form">
+    <Container style={{ width: "300px", height:"700px"}} className="log-sign-form">
       <Row>
         <Col>
           <UserAuthContextProvider>
@@ -20,13 +21,13 @@ function App() {
                 path="/home"
                 element={
                   <ProtectedRoute>
-                    <Home />
+                    <LandPage />
                   </ProtectedRoute>
                 }
               />
               <Route path="/" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
-              <Route path="/hello" element={<Hello />}  />
+              <Route path="/hello" element={<LandPage />} />
             </Routes>
           </UserAuthContextProvider>
         </Col>

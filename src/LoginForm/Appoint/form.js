@@ -245,7 +245,7 @@ export default function Appoint() {
                 </div>
                 <div className="submit">
                   <button type="submit" onClick={postData}>
-                    GET AN APPOINTMET
+                    APPOINTMENT
                   </button>
                 </div>
               </div>
@@ -253,10 +253,6 @@ export default function Appoint() {
           </form>
         </>
       </section>
-
-      <div className="form-foot">
-        <Footer />
-      </div>
     </>
   );
 }
