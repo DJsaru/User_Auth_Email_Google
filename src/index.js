@@ -21,9 +21,9 @@ ReactDOM.render(
     {/* <Departments /> */}
     <Router>
     {/* <LandPage /> */}
-    {/* <Practise /> */}
+    <Practise />
     {/* <DoctorCards /> */}
-    <App />
+    {/* <App /> */}
     </Router>
   {/* <Appoint /> */}
   {/* <Demo1 /> */}
